@@ -1,0 +1,90 @@
+@import "tailwindcss";
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+/* rounded-b-lg shadow-md */
+
+@theme{
+    --font-inter: "Inter", sans-serif;
+    --color-primary:#374151;
+    --color-secondary:#ADAEBC;
+    --color-white:#FFFFFF;
+    --color-blue:#2563EB;
+    --color-sky:#DBEAFE;
+    --color-border-btn:#E5E7EB;
+    --color-black:#111827;
+    --color-gray:#4B5563;
+    --color-g:#F9FAFB;
+}
+
+.container{
+    @apply max-w-302 m-auto ;
+  }
+h2{
+    @apply font-inter font-bold text-[30px] text-black leading-9 pt-16 
+}  
+ 
+/* header */
+  .list-item{
+    @apply font-inter text-[16px] text-primary font-normal leading-6 
+  }
+
+  .search-input{
+    @apply border border-secondary rounded-lg w-lg h-10.5 
+    placeholder:font-inter text-[16px] text-secondary pl-[40.02px] 
+  }
+
+  .icon{
+    @apply flex border-0 gap-4 items-center ml-[81.02px] 
+  }
+
+/* header */
+
+
+/* hero */
+
+.hero{
+    @apply w-360 h-125 bg-[url(public/img/section.png)] bg-cover bg-center
+}
+
+.hero-h1{
+    @apply text-6xl font-bold text-white font-inter leading-15 
+}
+
+.hero-p{
+    @apply font-normal font-inter leading-7 text-[20px] text-sky pt-3 pb-8
+}
+
+.hero-btn{
+    @apply font-inter font-semibold text-[16px] text-blue bg-white border border-border-btn pt-3.5 pb-2.5 pl-8 pr-[26.05px] rounded-lg 
+}
+
+/* hero */
+
+/* category */
+
+.category-p{
+   @apply font-inter font-medium  text-black text-[16px] leading-6 pt-4 
+}
+
+/* category */
+
+
+/* Featured */
+
+.block-F{
+    @apply flex mt-8 p-4 w-71.5 h-86 bg-white border border-0 rounded-lg
+}
+
+.F-h3{
+    @apply font-inter font-semibold text-black text-[16px] pt-4
+}
+
+.F-p{
+    @apply font-inter font-normal text-gray text-[14px] pt-2.25 
+}
+
+.F-p2{
+    @apply font-inter font-bold text-black text-[20px] pr-33 leading-7
+}
+/* Featured */  
